@@ -19,7 +19,8 @@ import time
 
 ### Construct date designation component for URL of previous month's contributions
 # Get previous month as int
-prev_mon = int(time.strftime("%m")) - 1
+# Sept 6, 2016 Thong just changed the number form - 1 to -2 to get July's numbers
+prev_mon = int(time.strftime("%m")) - 2
 # In case the current month is January, set the previous month to December
 # if prev_mon = -1:
 #     prev_mon = int(12)
