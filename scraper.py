@@ -31,8 +31,7 @@ else:
     year = str(int(time.strftime("%Y")))
 
 ### Catching up. Sept 2016. Delete this in a sec...
-year = str(int(2016))
-prev_mon = int(9)
+print("Year: %s Month: %s  " % (year, prev_mon))
 
 # Get prev month text name and set abreviations
 prev_mon_text = calendar.month_name[prev_mon]
