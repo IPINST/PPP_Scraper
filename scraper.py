@@ -30,6 +30,7 @@ if prev_mon == 12:
 else:
     year = str(int(time.strftime("%Y")))
 
+
 # Get prev month text name and set abreviations
 prev_mon_text = calendar.month_name[prev_mon]
 # use two variation of abbreviation
@@ -42,6 +43,9 @@ prev_mon_abbr_2 = prev_mon_abbr_2.lower()
 # Check whethere 3 or 4 letter month abbreviation
 url_1 = 'http://www.un.org/en/peacekeeping/contributors/' + year + '/' + prev_mon_abbr_1 + str(year[2:4]) + '_3.pdf'
 url_2 = 'http://www.un.org/en/peacekeeping/contributors/' + year + '/' + prev_mon_abbr_2 + str(year[2:4]) + '_3.pdf'
+
+#Catching up on past months. Delete line below after done...
+url_1 = 'http://www.un.org/en/peacekeeping/contributors/2016/sep16_3.pdf'
 
 response = requests.get(url_1)
 if response.status_code < 400:
