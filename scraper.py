@@ -30,7 +30,6 @@ if prev_mon == 12:
 else:
     year = str(int(time.strftime("%Y")))
 
-
 # Get prev month text name and set abreviations
 prev_mon_text = calendar.month_name[prev_mon]
 # use two variation of abbreviation
@@ -68,7 +67,12 @@ print "The first 200 characters are: ", xmldata[:200]
 ## set current date from URL
 # get month number
 m3 = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
-month = m3.index(prev_mon_abbr_1)+1
+#Catching up on past months. Delete 2 lines below after done...
+month = "sep"
+year = 2016
+
+#Reactivate below after caught up
+#month = m3.index(prev_mon_abbr_1)+1
 # Get last day of month
 day = calendar.monthrange(int(year), month)[1]
 # Get date
