@@ -68,7 +68,7 @@ print "The first 200 characters are: ", xmldata[:200]
 # get month number
 m3 = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 #Catching up on past months. Delete 2 lines below after done...
-month = "sep"
+month = 9
 year = 2016
 
 #Reactivate below after caught up
