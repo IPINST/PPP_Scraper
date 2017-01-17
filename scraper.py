@@ -44,7 +44,7 @@ url_1 = 'http://www.un.org/en/peacekeeping/contributors/' + year + '/' + prev_mo
 url_2 = 'http://www.un.org/en/peacekeeping/contributors/' + year + '/' + prev_mon_abbr_2 + str(year[2:4]) + '_3.pdf'
 
 #Catching up on past months. Delete line below after done...
-url_1 = 'http://www.un.org/en/peacekeeping/contributors/2016/Nov16_3.pdf'
+url_1 = 'http://www.un.org/en/peacekeeping/contributors/2016/dec16_3.pdf'
 
 response = requests.get(url_1)
 if response.status_code < 400:
@@ -68,7 +68,7 @@ print "The first 200 characters are: ", xmldata[:200]
 # get month number
 m3 = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]
 #Catching up on past months. Delete 2 lines below after done...
-month = 11
+month = 12
 year = 2016
 
 #Reactivate below after caught up
