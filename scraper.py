@@ -20,7 +20,7 @@ import time
 ### Construct date designation component for URL of previous month's contributions
 # Get previous month as int
 # In case you miss a month change - 1 to the number of months you would like to go back, then got to morph.io run the script. Finally change back to -1.
-prev_mon = int(time.strftime("%m")) - 2
+prev_mon = int(time.strftime("%m")) - 1
 # In case the current month is January, set the previous month to December
 # if prev_mon = -1:
 #     prev_mon = int(12)
