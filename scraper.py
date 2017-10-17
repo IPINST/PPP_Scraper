@@ -50,8 +50,8 @@ else:
     url = url_2
     
 ### Catch up on months missed. Replaces above lines of code. Be sure to delete the next three lines.
-url="http://www.un.org/en/peacekeeping/contributors/2017/jun17_3.pdf"
-prev_mon_abbr_1 = "jun"
+url="http://www.un.org/en/peacekeeping/contributors/2017/jul17_3.pdf"
+prev_mon_abbr_1 = "jul"
 year = 2017
 
 ### debugging. delete next  line after.
