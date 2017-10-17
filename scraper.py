@@ -43,16 +43,17 @@ prev_mon_abbr_2 = prev_mon_abbr_2.lower()
 url_1 = 'http://www.un.org/en/peacekeeping/contributors/' + year + '/' + prev_mon_abbr_1 + str(year[2:4]) + '_3.pdf'
 url_2 = 'http://www.un.org/en/peacekeeping/contributors/' + year + '/' + prev_mon_abbr_2 + str(year[2:4]) + '_3.pdf'
 
-### Catch up on months missed. Replaces above lines of code. Be sure to delete the next three lines.
-url="http://www.un.org/en/peacekeeping/contributors/2017/may17_3.pdf"
-prev_mon_abbr_1 = "may"
-year = 2017
-
 response = requests.get(url_1)
 if response.status_code < 400:
     url = url_1
 else:
     url = url_2
+    
+### Catch up on months missed. Replaces above lines of code. Be sure to delete the next three lines.
+url="http://www.un.org/en/peacekeeping/contributors/2017/may17_3.pdf"
+prev_mon_abbr_1 = "may"
+year = 2017
+
 ### debugging. delete next  line after.
 print url
 ### Read PDF
